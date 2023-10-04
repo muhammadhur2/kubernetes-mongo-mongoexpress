@@ -9,7 +9,6 @@ spec:
     matchLabels:
       app: mongodb
   replicas: 1
-  strategy:
   template:
     metadata:
       labels:
@@ -20,6 +19,7 @@ spec:
           image: mongo:4.4.6
           ports:
             - containerPort: 27017
+          args: ["--bind_ip", "0.0.0.0"]
           env:
           - name: MONGO_INITDB_ROOT_USERNAME
             valueFrom:
