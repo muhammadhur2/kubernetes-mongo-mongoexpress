@@ -62,22 +62,22 @@ Stores the MongoDB root username and password in base64 encoding.
 
 1. Apply the secret:
    ```bash
-   ```kubectl apply -f [path_to_secret_file.yaml]
+   kubectl apply -f [path_to_secret_file.yaml]
 
 
 2. Deploy the MongoDB:
    ```bash
-   ```kubectl apply -f [path_to_mongodb_file.yaml]
+   kubectl apply -f [path_to_mongodb_file.yaml]
 
 
 3. Apply the ConfigMap:
    ```bash
-   ```kubectl apply -f [path_to_configmap_file.yaml]
+   kubectl apply -f [path_to_configmap_file.yaml]
 
 4. Deploy the Mongo-Express:
    ```bash
-   ```kubectl apply -f [path_to_mongo-express_file.yaml]
+   kubectl apply -f [path_to_mongo-express_file.yaml]
 
 5. Access the Mongo-Express GUI via a browser:
     ```bash
-    ```http://[Node's IP Address]:30000
+    http://[Node's IP Address]:30000
