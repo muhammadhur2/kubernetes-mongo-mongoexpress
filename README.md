@@ -69,7 +69,6 @@ Stores the MongoDB root username and password in base64 encoding.
    ```bash
    kubectl apply -f [path_to_mongodb_file.yaml]
 
-
 3. Apply the ConfigMap:
    ```bash
    kubectl apply -f [path_to_configmap_file.yaml]
